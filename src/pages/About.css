@@ -1,0 +1,142 @@
+/* PAGE */
+
+.about-page{
+    background:#0a0a0a;
+    color:white;
+    min-height:100vh;
+}
+
+
+/* HERO */
+
+.about-hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.about-hero h1{
+    font-size:3rem;
+    color:#b026ff;
+    margin-bottom:20px;
+}
+
+.about-hero p{
+    color:#ccc;
+    max-width:700px;
+    margin:auto;
+    font-size:1.1rem;
+}
+
+
+/* VISION */
+
+.vision{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.vision h2{
+    color:#b026ff;
+    margin-bottom:20px;
+}
+
+.vision p{
+    max-width:700px;
+    margin:auto;
+    color:#ccc;
+    line-height:1.6;
+}
+
+
+/* PHILOSOPHY */
+
+.philosophy{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.philosophy-grid{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.philo-card{
+    background:#1a001f;
+    padding:30px;
+    width:260px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.6);
+    transition:0.3s;
+}
+
+.philo-card h3{
+    color:#b026ff;
+    margin-bottom:10px;
+}
+
+.philo-card p{
+    color:#ccc;
+}
+
+.philo-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 12px 35px rgba(176,38,255,0.4);
+}
+
+
+/* FAQ */
+
+.faq{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.faq-item{
+  background:#1a001f;
+  padding:25px;
+  border-radius:10px;
+  margin:20px auto;
+  max-width:700px;
+}
+
+.faq-item h4{
+  color:#b026ff;
+  margin-bottom:10px;
+}
+
+.faq-item p{
+  color:#ccc;
+}
+
+
+/* CTA */
+
+.about-cta{
+    text-align:center;
+    padding:100px 20px;
+}
+
+.about-cta h2{
+    margin-bottom:30px;
+}
+
+.about-cta button{
+  background:#b026ff;
+  border:none;
+  padding:12px 25px;
+  border-radius: 15px;
+  color:white;
+  font-weight: bold;
+}
+
+.about-cta button:hover{
+    background:#8f1ed6;
+    color: #000;
+}
+
+span{
+    color:white;
+}

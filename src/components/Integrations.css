@@ -1,0 +1,48 @@
+.integrations{
+  color:white;
+  padding:80px 60px;
+  text-align:center;
+}
+
+.integrations h2{
+  font-size:2.5rem;
+  margin-bottom:20px;
+  color:#b026ff;
+}
+
+.integration-subtext{
+  color:#cccccc;
+  margin-bottom:50px;
+}
+
+.integration-cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.integration-card{
+  background:#1a001f;
+  padding:30px;
+  width:260px;
+  border-radius:12px;
+
+  box-shadow:0 8px 25px rgba(0,0,0,0.6);
+  transition:0.3s;
+}
+
+.integration-card h3{
+  color:#b026ff;
+  margin-bottom:10px;
+}
+
+.integration-card p{
+  color:#cccccc;
+}
+
+.integration-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 35px rgba(176,38,255,0.5);
+}
+

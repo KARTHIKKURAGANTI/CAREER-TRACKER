@@ -1,0 +1,49 @@
+.problem{
+  color:white;
+  padding:80px 60px;
+  text-align:center;
+}
+
+.problem h2{
+  font-size:2.5rem;
+  margin-bottom:50px;
+  color:#b026ff;
+}
+
+/* Cards container */
+
+.problem-cards{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+/* Individual card */
+
+.problem-card{
+  background:#1a001f;
+  padding:30px;
+  width:280px;
+  border-radius:10px;
+
+  box-shadow:0 8px 25px rgba(0,0,0,0.6);
+  transition:0.3s;
+}
+
+.problem-card h3{
+  color:#b026ff;
+  margin-bottom:15px;
+}
+
+.problem-card p{
+  color:#ffffff;
+  font-size:15px;
+}
+
+/* Hover effect */
+
+.problem-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 35px rgba(176,38,255,0.5);
+}

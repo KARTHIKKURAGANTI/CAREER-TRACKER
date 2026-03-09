@@ -1,0 +1,10 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'comic sans ms', cursive, sans-serif;
+}
+body{
+  background: linear-gradient(135deg, #0a0a0a, #1a001f);
+}

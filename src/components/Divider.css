@@ -1,0 +1,10 @@
+.divider{
+  width:80%;
+  height:2px;
+
+  margin:60px auto;
+
+  
+  background:linear-gradient(90deg, transparent, #f0eef1, transparent);
+  border-radius:0px;   /* sharp edges */
+}
