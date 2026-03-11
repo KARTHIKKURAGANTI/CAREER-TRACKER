@@ -1,0 +1,123 @@
+.dashboard-layout{
+    display:flex;
+    background:#0a0a0a;
+    color:white;
+    min-height:100vh;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:220px;
+    background:#14001a;
+    padding:30px;
+}
+
+.sidebar h2{
+    color:#b026ff;
+    margin-bottom:40px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    margin-bottom:20px;
+    cursor:pointer;
+    color:#ccc;
+}
+
+.sidebar li:hover{
+    color:#b026ff;
+}
+
+/* MAIN */
+
+.dashboard-main{
+    flex:1;
+    padding:30px;
+}
+
+/* TOPBAR */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.profile img{
+    border-radius:50%;
+}
+
+/* STATS */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.stat-card{
+    background:#14001a;
+    padding:25px;
+    border-radius:10px;
+}
+
+.big{
+    font-size:28px;
+    color:#b026ff;
+}
+
+/* JOB METER */
+
+.job-meter{
+    margin-top:50px;
+}
+
+.meter{
+    height:14px;
+    background:#1a001f;
+    border-radius:10px;
+    margin:15px 0;
+}
+
+.meter-fill{
+    width:75%;
+    height:100%;
+    background:#b026ff;
+    border-radius:10px;
+}
+
+.career-insights{
+    margin-top:50px;
+}
+
+.insight-card{
+    background:#14001a;
+    padding:30px;
+    border-radius:10px;
+}
+
+.insight-card ul{
+    margin:10px 0;
+}
+
+.insight-card li{
+    color:#ccc;
+}
+
+.prediction{
+    margin-top:20px;
+    color:#b026ff;
+    font-weight:600;
+}
