@@ -1,0 +1,62 @@
+.integrations-page{
+  min-height:100vh;
+ 
+  color:white;
+  padding:200px;
+  text-align:center;
+}
+
+.integrations-page h1{
+  color:#b026ff;
+  margin-bottom:10px;
+}
+
+.sub{
+  color:#ccc;
+  margin-bottom:40px;
+}
+
+.integrations-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.integration-card{
+  background:#14001a;
+  padding:30px;
+  border-radius:12px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.6);
+  transition:0.3s;
+}
+
+.integration-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 10px 35px rgba(176,38,255,0.3);
+}
+
+.integration-card h3{
+  color:#b026ff;
+  margin-bottom:10px;
+}
+
+.integration-card p{
+  color:#ccc;
+  margin-bottom:20px;
+}
+
+.integration-card button{
+  background:#b026ff;
+  border:none;
+  padding:10px 20px;
+  border-radius:6px;
+  color:white;
+  cursor:pointer;
+}
+
+.integration-card button:hover{
+  background:#8f1ed6;
+}
+
+
+
