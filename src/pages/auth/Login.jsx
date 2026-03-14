@@ -1,7 +1,20 @@
 import "./Login.css"
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 function Login(){
+
+  const navigate = useNavigate()
+
+  const handleLogin = (e) => {
+    e.preventDefault()
+
+    // fake login token
+    localStorage.setItem("token","user_logged_in")
+
+    // redirect to dashboard
+    navigate("/dashboardHome")
+  }
 
   return(
 
@@ -11,9 +24,9 @@ function Login(){
 
         <h1>Welcome Back</h1>
 
-        <p>Login to continue your <span id="a">Career</span><span id="b">Tracker</span> journey</p>
+        <p>Login to continue your NeuroMirror journey</p>
 
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleLogin}>
 
           <input
             type="email"
@@ -34,7 +47,7 @@ function Login(){
         </form>
 
         <p className="login-footer">
-          Don't have an account? <Link to="/signup">Sign up</Link>
+          Don't have an account? <Link to="/signup">Sign Up</Link >
         </p>
 
       </div>
