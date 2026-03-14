@@ -1,7 +1,13 @@
 import "./Profile.css"
+import { useNavigate } from "react-router-dom"
 
 function Profile(){
+  const navigate = useNavigate()
 
+  const logout = () => {
+    localStorage.removeItem("token")
+    navigate("/login")
+  }
   return(
 
     <div className="profile-page">
@@ -24,7 +30,8 @@ function Profile(){
             Edit Profile
           </button>
 
-          <button className="logout-btn">
+          
+          <button className="logout-btn" onClick={logout}>
             Logout
           </button>
 
@@ -39,3 +46,7 @@ function Profile(){
 }
 
 export default Profile
+
+
+
+
