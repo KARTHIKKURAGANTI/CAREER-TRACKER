@@ -1,20 +1,13 @@
 
-import Sidebar from "./Sidebar"
-import Topbar from "./Topbar"
-import "./DashboardHome.css"
 
-function DashboardHome(){
+import "./Dhome.css"
+
+function Dhome(){
 
   return(
 
-    <div className="dashboard-layout">
-
-      <Sidebar/>
-
-      <div className="dashboard-main">
-
-        <Topbar/>
-
+  
+<>
         <div className="stats-grid">
 
           <div className="stat-card">
@@ -83,12 +76,10 @@ function DashboardHome(){
 
         </div>
 
-        </div>
-
-    </div>
+   </>     
 
   )
 
 }
 
-export default DashboardHome
+export default Dhome
