@@ -12,7 +12,7 @@ function Topbar(){
       </h4>
 
       <div className="profile">
-        <Link to="/profile">
+        <Link to="profile">
           <img
             src="https://i.pravatar.cc/150?img=3"
             alt="dp"
