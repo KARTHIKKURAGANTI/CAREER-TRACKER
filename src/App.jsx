@@ -10,8 +10,9 @@ import Login from "./pages/auth/Login";
 import Signup from "./pages/auth/Signup";
 
 import ProtectedRoute from "./components/ProtectedRoute";
+import Dashboard from "./pages/dashboard/Dashboard";
+import Dhome from "./pages/dashboard/Dhome";  
 import Profile from "./pages/dashboard/Profile";
-import DashboardHome from "./pages/dashboard/DashBoardHome";
 import Analytics from "./pages/dashboard/Analytics";
 import Integrations from "./pages/dashboard/Integrations"
 import Settings from "./pages/dashboard/Settings";
@@ -28,64 +29,22 @@ function App() {
 
       <Route path="/login" element={<Login/>}/>
       <Route path="/signup" element={<Signup/>}/>
-
-      {/* Dashboard pages */}
-                  <Route
-                    path="/dashboardHome"
-                    element={
-                      <ProtectedRoute>
-                        <DashboardHome/>
-                      </ProtectedRoute>
-                    }
-                  />
-
-                  <Route
-                    path="/analytics"
-                    element={
-                      <ProtectedRoute>
-                        <Analytics/>
-                      </ProtectedRoute>
-                    }
-                  />
-
-                  <Route
-                    path="/profile"
-                    element={
-                      <ProtectedRoute>
-                        <Profile/>
-                      </ProtectedRoute>
-                    }
-                  />
-
-                  <Route
-                    path="/integrations"
-                    element={
-                      <ProtectedRoute>
-                        <Integrations/>
-                      </ProtectedRoute>
-                    }
-                  />
-
-                  <Route
-                    path="/settings"
-                    element={
-                      <ProtectedRoute>
-                        <Settings/>
-                      </ProtectedRoute>
-                    }
-                  />
+              
+              <Route path="/dashboard" element={<ProtectedRoute><Dashboard/></ProtectedRoute>}>
+                <Route path="Dhome" element={<Dhome/>}/>
+                <Route path="analytics" element={<Analytics/>}/>
+                <Route path="profile" element={<Profile/>}/>
+                <Route path="integrations" element={<Integrations/>}/>
+                <Route path="settings" element={<Settings/>}/>
+              </Route>
+              
 
     </Routes>
+    
   );
 }
 
 export default App;
-
-
-
-
-
-
 
 
 
