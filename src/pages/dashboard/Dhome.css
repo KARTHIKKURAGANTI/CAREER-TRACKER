@@ -1,0 +1,64 @@
+/* MAIN CONTENT ONLY */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background: #14001a;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.big {
+  font-size: 28px;
+  color: #b026ff;
+}
+
+/* JOB METER */
+
+.job-meter {
+  margin-top: 50px;
+}
+
+.meter {
+  height: 14px;
+  background: #1a001f;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.meter-fill {
+  width: 75%;
+  height: 100%;
+  background: #b026ff;
+  border-radius: 10px;
+}
+
+/* INSIGHTS */
+
+.career-insights {
+  margin-top: 50px;
+}
+
+.insight-card {
+  background: #14001a;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.insight-card ul {
+  margin: 10px 0;
+}
+
+.insight-card li {
+  color: #ccc;
+}
+
+.prediction {
+  margin-top: 20px;
+  color: #b026ff;
+  font-weight: 600;
+}
